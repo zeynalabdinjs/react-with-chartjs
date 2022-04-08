@@ -1,0 +1,37 @@
+[
+    {
+        "Ay": "Yanvar",
+        "Kar": 20,
+        "Zərər": 10
+    },
+    {
+        "Ay": "Fevral",
+        "Kar": 30,
+        "Zərər": 50
+    },
+    {
+        "Ay": "Mart",
+        "Kar": 15,
+        "Zərər": 3
+    },
+    {
+        "Ay": "Aprel",
+        "Kar": 35,
+        "Zərər": 12
+    },
+    {
+        "Ay": "May",
+        "Kar": 70,
+        "Zərər": 24
+    },
+    {
+        "Ay": "Iyun",
+        "Kar": 110,
+        "Zərər": 1
+    },
+    {
+        "Ay": "Iyul",
+        "Kar": 80,
+        "Zərər": 0
+    }
+]
