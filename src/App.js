@@ -31,28 +31,44 @@ export const options = {
   responsive: true,
   plugins: {
     legend: {
-      position: 'top',
+      position: 'left',
     },
     title: {
       display: true,
       text: 'Yarımilin qazancı',
     },
   },
+  scales: {
+    x: {
+      grid: {
+        display: false,
+        drawBorder: false,
+      },
+    },
+    y: {
+      grid: {
+        display: false,
+        drawBorder: false,
+      },
+    }
+  },
 };
 
 
 export const data = {
-  labels: datas.map((item)=> item.Ay),
+  labels: datas.map((item) => item.Ay),
   datasets: [
     {
       label: 'Kar',
-      data: datas.map((item)=> item.Kar),
-      backgroundColor: 'rgba(0, 179, 42, 0.5)',
+      data: datas.map((item) => item.Kar),
+      backgroundColor: 'rgba(0, 179, 42, 0.4)',
+      borderRadius: 2,
     },
     {
       label: 'Zərər',
-      data: datas.map((item)=> item.Zərər),
-      backgroundColor: 'rgba(255, 57, 43, 0.5)',
+      data: datas.map((item) => item.Zərər),
+      backgroundColor: 'rgba(255, 57, 43, 0.4)',
+      borderRadius: 2,
     },
   ],
 };
@@ -60,8 +76,8 @@ export const data = {
 export default function App() {
   return (
     <div className="App">
-      <Line options={options} data={data}/>
-      <Bar options={options} data={data}/>
+      <Line options={options} data={data} />
+      <Bar options={options} data={data} />
     </div>
   )
 
